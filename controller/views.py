@@ -15,9 +15,10 @@ class HomeController(APIView):
             obj.name = name
             obj.device_ip = ip
             obj.save()
-            return Response('device saved', status=200)
+            output = {'status':'device added'}
+            return Response(output, status=200)
         except Exception as e:
-            output = "Error in recieving device configuration"
+            output = {"error":"Error in recieving device configuration"}
             return Response(output, status=400)
 
     def delete(self,request):
@@ -25,9 +26,11 @@ class HomeController(APIView):
         name = request.data.get('name', None)
         if name:
             Device.objects.filter(name=name).delete()
-            return Response("device removed", status=200)
+            output = {'status':'device removed'}
+            return Response(output, status=200)
         else:
-            return Response('name required', status=400)
+            output = {'error':"name required"}
+            return Response(output, status=400)
 
 class DeviceController(APIView):
     def post(self,request):
@@ -40,10 +43,11 @@ class DeviceController(APIView):
         end = datetime.now
         obj = Operations(device=device, start_time=start, end_time=end, task=task)
         obj.save()
-        return Response("task completed", status=200)
+        output = {'status':'task completed'}
+        return Response(output, status=200)
 
     def get(self):
         #list add devices
         devices = Device.objects.all()
-        data = Listserializers(devices)
+        data = {'devices': Listserializers(devices)}
         return Response(data, status=200)

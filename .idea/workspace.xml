@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d4f31f4e-d100-4c55-bffe-08ef6d1718de" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/controller/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +74,7 @@
       <option name="presentableId" value="Default" />
       <updated>1581766199058</updated>
       <workItem from="1581766244645" duration="5980000" />
-      <workItem from="1581773400336" duration="1208000" />
+      <workItem from="1581773400336" duration="1547000" />
     </task>
     <task id="LOCAL-00001" summary="draft done">
       <created>1581774320999</created>
@@ -82,7 +83,14 @@
       <option name="project" value="LOCAL" />
       <updated>1581774320999</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="draft done">
+      <created>1581774631595</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1581774631595</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -93,10 +101,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="draft done" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="256" y="27" width="911" height="741" key="CommitChangelistDialog2" timestamp="1581774320728">
+    <state x="256" y="27" width="911" height="741" key="CommitChangelistDialog2" timestamp="1581774658899">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="256" y="27" width="911" height="741" key="CommitChangelistDialog2/67.27.1299.741@67.27.1299.741" timestamp="1581774320728" />
+    <state x="256" y="27" width="911" height="741" key="CommitChangelistDialog2/67.27.1299.741@67.27.1299.741" timestamp="1581774658899" />
     <state x="205" y="31" key="SettingsEditor" timestamp="1581773500609">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
