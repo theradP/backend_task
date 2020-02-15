@@ -1,11 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d4f31f4e-d100-4c55-bffe-08ef6d1718de" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controller/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controller/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controller/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controller/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controller/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controller/serializers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controller/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controller/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controller/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/home_automation_task.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/home_automation_task.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home_automation_task/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/home_automation_task/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home_automation_task/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/home_automation_task/urls.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1XqGR3GmIA0kghhaZcWXRiHHmmB" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunManager">
     <configuration name="home_automation_task" type="Python.DjangoServer" factoryName="Django server">
@@ -31,5 +75,37 @@
       <option name="customRunCommand" value="" />
       <method v="2" />
     </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d4f31f4e-d100-4c55-bffe-08ef6d1718de" name="Default Changelist" comment="" />
+      <created>1581766199058</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1581766199058</updated>
+      <workItem from="1581766244645" duration="5980000" />
+      <workItem from="1581773400336" duration="862000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="256" y="27" width="911" height="741" key="CommitChangelistDialog2" timestamp="1581774281879">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state x="256" y="27" width="911" height="741" key="CommitChangelistDialog2/67.27.1299.741@67.27.1299.741" timestamp="1581774281879" />
+    <state x="205" y="31" key="SettingsEditor" timestamp="1581773500609">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state x="205" y="31" key="SettingsEditor/67.27.1299.741@67.27.1299.741" timestamp="1581773500609" />
+    <state x="372" y="224" key="com.intellij.ide.util.TipDialog" timestamp="1581773401446">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state x="372" y="224" key="com.intellij.ide.util.TipDialog/67.27.1299.741@67.27.1299.741" timestamp="1581773401446" />
   </component>
 </project>
