@@ -1,9 +1,7 @@
-from django.shortcuts import render
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from .models import Device, Operations
 from datetime import datetime
-from .serializers import Listserializers
 # Create your views here.
 class HomeController(APIView):
     def post(self,request):
@@ -25,9 +23,14 @@ class HomeController(APIView):
         #remove device
         name = request.data.get('name', None)
         if name:
-            Device.objects.filter(name=name).delete()
-            output = {'status':'device removed'}
-            return Response(output, status=200)
+            dev = Device.objects.filter(name=name)
+            if dev:
+                dev.delete()
+                output = {'status':'device removed'}
+                return Response(output, status=200)
+            else:
+                output = {'status':'device not added'}
+                return Response(output, status=200)
         else:
             output = {'error':"name required"}
             return Response(output, status=400)
@@ -35,19 +38,22 @@ class HomeController(APIView):
 class DeviceController(APIView):
     def post(self,request):
         #do_task
-        start = datetime.now
+        start = datetime.now()
         device_name = request.data.get('name', None)
         device = Device.objects.filter(name=device_name)
         task = request.data.get('task', None)
         #call task api or function
-        end = datetime.now
-        obj = Operations(device=device, start_time=start, end_time=end, task=task)
+        end = datetime.now()
+        obj = Operations(device=device[0], start_time=start, end_time=end, task=task)
         obj.save()
         output = {'status':'task completed'}
         return Response(output, status=200)
 
-    def get(self):
+    def get(self, request):
         #list add devices
+        output = {}
         devices = Device.objects.all()
-        data = {'devices': Listserializers(devices)}
-        return Response(data, status=200)
+        for device in devices:
+            result = {device.name:device.device_ip}
+            output.update(result)
+        return Response(output, status=200)
