@@ -21,7 +21,7 @@ class HomeController(APIView):
 
     def delete(self,request):
         #remove device
-        name = request.data.get('name', None)
+        name = request.GET.get('name', None)
         if name:
             dev = Device.objects.filter(name=name)
             if dev:
