@@ -8,14 +8,14 @@ class HomeController(APIView):
         #add new device
         name = request.data.get('name', None)
         ip = request.data.get('ip', None)
-        try:
+        if name and ip:
             obj = Device()
             obj.name = name
             obj.device_ip = ip
             obj.save()
             output = {'status':'device added'}
             return Response(output, status=200)
-        except Exception as e:
+        else:
             output = {"error":"Error in recieving device configuration"}
             return Response(output, status=400)
 
@@ -40,14 +40,18 @@ class DeviceController(APIView):
         #do_task
         start = datetime.now()
         device_name = request.data.get('name', None)
-        device = Device.objects.filter(name=device_name)
         task = request.data.get('task', None)
+        device = Device.objects.filter(name=device_name)
+        if device:
         #call task api or function
-        end = datetime.now()
-        obj = Operations(device=device[0], start_time=start, end_time=end, task=task)
-        obj.save()
-        output = {'status':'task completed'}
-        return Response(output, status=200)
+            end = datetime.now()
+            obj = Operations(device=device[0], start_time=start, end_time=end, task=task)
+            obj.save()
+            output = {'status':'task completed'}
+            return Response(output, status=200)
+        else:
+            output = {'error':'called device is not added to network'}
+            return Response(output, status=400)
 
     def get(self, request):
         #list add devices
